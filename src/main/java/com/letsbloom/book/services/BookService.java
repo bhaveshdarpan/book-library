@@ -1,5 +1,6 @@
 package com.letsbloom.book.services;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.stereotype.Service;
@@ -40,5 +41,21 @@ public class BookService {
 
     public void deleteBook(String id) {
         bookRepository.deleteById(id);
+    }
+
+    public void seedDatabaseWithMockData() {
+        // Sample mock data
+        Book book1 = new Book();
+        book1.setTitle("Book Title 1");
+        book1.setAuthor("Author 1");
+        book1.setisbn("Genre 1");
+
+        Book book2 = new Book();
+        book2.setTitle("Book Title 2");
+        book2.setAuthor("Author 2");
+        book2.setisbn("Genre 2");
+
+        // Save mock data to the database
+        bookRepository.saveAll(Arrays.asList(book1, book2));
     }
 }
