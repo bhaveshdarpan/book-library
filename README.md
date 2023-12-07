@@ -66,7 +66,7 @@ This endpoint seeds the database with mock book data.
 {
     "title": "Updated Book Title",
     "author": "Updated Author",
-    "genre": "Updated Genre"
+    "isbn": "Updated ISBN"
 }
 ```
 
