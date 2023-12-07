@@ -48,12 +48,12 @@ public class BookService {
         Book book1 = new Book();
         book1.setTitle("Book Title 1");
         book1.setAuthor("Author 1");
-        book1.setisbn("Genre 1");
+        book1.setisbn("ISBN 1");
 
         Book book2 = new Book();
         book2.setTitle("Book Title 2");
         book2.setAuthor("Author 2");
-        book2.setisbn("Genre 2");
+        book2.setisbn("ISBN 2");
 
         // Save mock data to the database
         bookRepository.saveAll(Arrays.asList(book1, book2));
