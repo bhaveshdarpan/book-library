@@ -68,7 +68,4 @@ This project is a RESTful API for managing a library system built using Spring B
 
 **Description:** Updates details of a specific book in the library.
 
-**Response Format:**
-```json
-HTTP Status: 200 OK
-```
+**Response Format:** `HTTP Status: 200 OK`
