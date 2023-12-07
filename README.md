@@ -4,7 +4,7 @@ This project is a RESTful API for managing a library system built using Spring B
 ## Running the Application
 
 1. Clone the repository: `https://github.com/bhaveshdarpan/book-library/`
-2. Run the BookApplication.java file. The application should now be running on `http://localhost:8080`.
+2. Run the `BookApplication.java` file. The application should now be running on `http://localhost:8080`.
 
 ## Seeding the Database with Mock Data
 - During application startup, the database seeding process is triggered to insert random book data into the database.
