@@ -55,4 +55,14 @@ public class BookController {
         return book.map(value -> ResponseEntity.ok().body(value))
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
+
+    @PostMapping("/seed")
+    public ResponseEntity<String> seedDatabaseWithMockData() {
+        try {
+            bookService.seedDatabaseWithMockData();
+            return ResponseEntity.status(HttpStatus.CREATED).body("Database seeded with mock data");
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to seed database");
+        }
+    }
 }
