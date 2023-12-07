@@ -7,12 +7,8 @@ This project is a RESTful API for managing a library system built using Spring B
 2. Run the BookApplication.java file. The application should now be running on `http://localhost:8080`.
 
 ## Seeding the Database with Mock Data
-
-To seed the database with mock book data, use the following endpoint:
-
-**Endpoint:** `POST /api/books/seed`
-
-This endpoint seeds the database with mock book data.
+- During application startup, the database seeding process is triggered to insert random book data into the database.
+- Check the console logs for messages indicating the seeding process has been completed.
 
 ## API Documentation
 
